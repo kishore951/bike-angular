@@ -7,17 +7,22 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AddBikeComponent } from './add-bike/add-bike.component';
 import { FormsModule } from '@angular/forms';
+import { ViewBikeComponent } from './view-bike/view-bike.component';
 
 const appRoutes:Routes=[
 {
   path:"",component:AddBikeComponent
+},
+{
+  path:"view",component:ViewBikeComponent
 }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    AddBikeComponent
+    AddBikeComponent,
+    ViewBikeComponent
   ],
   imports: [
     BrowserModule,
